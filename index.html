@@ -50,11 +50,12 @@ button.active,button:hover{background:var(--accent);border-color:var(--accent)}
 
 /* Uniques Styling */
 .uniques-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px}
-.unique-card{background:linear-gradient(145deg,#151a28,#0e111b);border:1px solid var(--border);border-radius:16px;padding:20px;text-align:center}
-.unique-img{width:160px;height:160px;object-fit:contain;margin:0 auto 15px;display:block}
-.unique-card h3{margin:0 0 8px;font-size:20px;color:#22d3ee}
-.unique-details{background:#090b12;border-radius:10px;padding:12px;margin-top:12px;font-size:13px;line-height:1.6;text-align:left}
-.unique-details span{color:var(--muted)}
+.unique-card{background:linear-gradient(145deg,#151a28,#0e111b);border:1px solid #22d3ee;border-radius:16px;padding:24px;text-align:center;box-shadow:0 0 20px rgba(34,211,238,0.15)}
+.unique-img{width:180px;height:180px;object-fit:contain;margin:0 auto 15px;display:block}
+.unique-card h3{margin:0 0 4px;font-size:24px;color:#fff;letter-spacing:1px;text-transform:uppercase}
+.unique-tag{display:inline-block;background:#17223b;color:#22d3ee;font-size:12px;padding:4px 12px;border-radius:20px;margin-bottom:15px}
+.unique-details{background:#090b12;border:1px solid #272d40;border-radius:12px;padding:16px;margin-top:10px;font-size:14px;line-height:1.6;text-align:left}
+.unique-details p{margin:6px 0}
 .discord-tag{color:#8b5cf6;font-weight:700}
 
 @media(max-width:650px){.trade-sides{grid-template-columns:1fr}.vs{padding:0}.trade-btn,.uniques-btn{font-size:11px;padding:9px 12px}.calc-box{padding:16px}}
@@ -103,21 +104,19 @@ button.active,button:hover{background:var(--accent);border-color:var(--accent)}
 </div>
 
 <div id="uniquesModal" class="modal">
-  <div class="calc-box">
+  <div class="calc-box" style="max-width:500px;">
     <div class="calc-top">
-      <div><h2>Unique Pets</h2><p>Exclusive items and single-owner collection entries.</p></div>
+      <div><h2>UNIQUE PETS</h2></div>
       <button class="close" onclick="closeUniques()">×</button>
     </div>
     <div class="uniques-grid">
       <div class="unique-card">
-        <!-- Giant Penguin Image -->
-        <img class="unique-img" src="input_file_0.png" alt="Giant Penguin">
-        <h3>Carsten</h3>
-        <p style="color:var(--muted);font-size:13px;margin:0 0 10px;">Giant Penguin</p>
+        <img class="unique-img" src="image_a48de4.png" alt="Giant Penguin">
+        <h3>CARSTEN</h3>
+        <span class="unique-tag">Giant Penguin</span>
         <div class="unique-details">
-          <p><strong>Value:</strong> ~10 Huge Cats</p>
-          <p><strong>Discord Contact:</strong> <span class="discord-tag">Carsten</span></p>
-          <p><span>Contact on Discord to discuss trading options for this item.</span></p>
+          <p>🐱 <strong>Value:</strong> ~10 Huge Cats</p>
+          <p>💬 <strong>Discord Username:</strong> <span class="discord-tag">.waste.gg</span> <span style="color:var(--muted);font-size:12px;">(to discuss trade)</span></p>
         </div>
       </div>
     </div>
